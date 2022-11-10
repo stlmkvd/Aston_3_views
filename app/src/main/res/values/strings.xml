@@ -1,0 +1,20 @@
+<resources>
+
+    <!--    countries-->
+    <string name="app_name">My Application</string>
+    <string name="austria">austria</string>
+    <string name="poland">poland</string>
+    <string name="italy">italy</string>
+    <string name="colombia">colombia</string>
+    <string name="madagascar">madagascar</string>
+    <string name="thailand">thailand</string>
+    <string name="denmark">denmark</string>
+    <string name="switzerland">switzerland</string>
+
+    <!--    headers-->
+    <string name="task1">task 1</string>
+    <string name="task2">task 2</string>
+
+    <!--    other-->
+    <string name="swipe">swipe</string>
+</resources>
