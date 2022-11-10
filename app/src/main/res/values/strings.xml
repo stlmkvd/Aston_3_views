@@ -17,4 +17,6 @@
 
     <!--    other-->
     <string name="swipe">swipe</string>
+    <string name="edittext_hint">Enter url here...</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
