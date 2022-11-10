@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="16dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/header"
+        style="@style/text_header"
+        android:text="@string/task1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="62dp" />
+
+    <ImageView
+        android:id="@+id/img_austria"
+        style="@style/flag_img_style"
+        android:src="@drawable/ic_austria"
+        app:layout_constraintBottom_toTopOf="@+id/img_poland"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@id/header"
+        app:layout_constraintVertical_chainStyle="spread" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/text_country_name"
+        android:text="@string/austria"
+        app:layout_constraintBottom_toBottomOf="@id/img_austria"
+        app:layout_constraintStart_toEndOf="@id/img_austria"
+        app:layout_constraintTop_toTopOf="@id/img_austria" />
+
+    <ImageView
+        android:id="@+id/img_poland"
+        style="@style/flag_img_style"
+        android:src="@drawable/ic_poland"
+        app:layout_constraintBottom_toTopOf="@+id/img_italy"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/img_austria" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/text_country_name"
+        android:text="@string/poland"
+        app:layout_constraintBottom_toBottomOf="@id/img_poland"
+        app:layout_constraintStart_toEndOf="@id/img_poland"
+        app:layout_constraintTop_toTopOf="@id/img_poland" />
+
+    <ImageView
+        android:id="@+id/img_italy"
+        style="@style/flag_img_style"
+        android:src="@drawable/ic_italy"
+        app:layout_constraintBottom_toTopOf="@+id/img_colombia"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/img_poland" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/text_country_name"
+        android:text="@string/italy"
+        app:layout_constraintBottom_toBottomOf="@id/img_italy"
+        app:layout_constraintStart_toEndOf="@id/img_italy"
+        app:layout_constraintTop_toTopOf="@id/img_italy" />
+
+    <ImageView
+        android:id="@+id/img_colombia"
+        style="@style/flag_img_style"
+        android:src="@drawable/ic_colombia"
+        app:layout_constraintBottom_toTopOf="@+id/img_madagascar"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/img_italy" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/text_country_name"
+        android:text="@string/colombia"
+        app:layout_constraintBottom_toBottomOf="@id/img_colombia"
+        app:layout_constraintStart_toEndOf="@id/img_colombia"
+        app:layout_constraintTop_toTopOf="@id/img_colombia" />
+
+    <ImageView
+        android:id="@+id/img_madagascar"
+        style="@style/flag_img_style"
+        android:src="@drawable/ic_madagascar"
+        app:layout_constraintBottom_toTopOf="@+id/img_thailand"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/img_colombia" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/text_country_name"
+        android:text="@string/madagascar"
+        app:layout_constraintBottom_toBottomOf="@id/img_madagascar"
+        app:layout_constraintStart_toEndOf="@id/img_madagascar"
+        app:layout_constraintTop_toTopOf="@id/img_madagascar" />
+
+    <ImageView
+        android:id="@+id/img_thailand"
+        style="@style/flag_img_style"
+        android:src="@drawable/ic_thailand"
+        app:layout_constraintBottom_toTopOf="@+id/img_denmark"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/img_madagascar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/text_country_name"
+        android:text="@string/thailand"
+        app:layout_constraintBottom_toBottomOf="@id/img_thailand"
+        app:layout_constraintStart_toEndOf="@id/img_thailand"
+        app:layout_constraintTop_toTopOf="@id/img_thailand" />
+
+    <ImageView
+        android:id="@+id/img_denmark"
+        style="@style/flag_img_style"
+        android:src="@drawable/ic_denmark"
+        app:layout_constraintBottom_toTopOf="@+id/img_switzerland"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/img_thailand" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/text_country_name"
+        android:text="@string/denmark"
+        app:layout_constraintBottom_toBottomOf="@id/img_denmark"
+        app:layout_constraintStart_toEndOf="@id/img_denmark"
+        app:layout_constraintTop_toTopOf="@id/img_denmark" />
+
+    <ImageView
+        android:id="@+id/img_switzerland"
+        style="@style/flag_img_style"
+        android:src="@drawable/ic_switzerland"
+        app:layout_constraintBottom_toTopOf="@id/imageview_arrow_front"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/img_denmark" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/text_country_name"
+        android:text="@string/switzerland"
+        app:layout_constraintBottom_toBottomOf="@id/img_switzerland"
+        app:layout_constraintStart_toEndOf="@id/img_switzerland"
+        app:layout_constraintTop_toTopOf="@id/img_switzerland" />
+
+    <ImageView
+        android:id="@+id/imageview_arrow_front"
+        style="@style/arrow"
+        app:layout_constraintBottom_toTopOf="@id/textview_swipe"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_swipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/swipe"
+        android:textSize="24sp"
+        app:fontFamily="@font/ostrich_regular"
+        app:layout_constraintBottom_toTopOf="@id/imageview_arrow_back"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageview_arrow_back"
+        style="@style/arrow"
+        android:rotation="180"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
