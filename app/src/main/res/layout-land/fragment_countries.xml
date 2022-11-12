@@ -15,12 +15,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <!--    first column   -->
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/guideline_left"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        app:layout_constraintGuide_begin="62dp" />
+        app:layout_constraintGuide_begin="60dp" />
 
     <ImageView
         android:id="@+id/img_austria"
@@ -28,8 +29,7 @@
         android:src="@drawable/ic_austria"
         app:layout_constraintBottom_toTopOf="@+id/img_poland"
         app:layout_constraintStart_toStartOf="@id/guideline_left"
-        app:layout_constraintTop_toBottomOf="@id/header"
-        app:layout_constraintVertical_chainStyle="spread" />
+        app:layout_constraintTop_toBottomOf="@id/header" />
 
     <androidx.appcompat.widget.AppCompatTextView
         style="@style/text_country_name"
@@ -72,7 +72,7 @@
         android:id="@+id/img_colombia"
         style="@style/flag_img_style"
         android:src="@drawable/ic_colombia"
-        app:layout_constraintBottom_toTopOf="@+id/img_madagascar"
+        app:layout_constraintBottom_toTopOf="@id/imageview_arrow_front"
         app:layout_constraintStart_toStartOf="@id/guideline_left"
         app:layout_constraintTop_toBottomOf="@+id/img_italy" />
 
@@ -83,13 +83,21 @@
         app:layout_constraintStart_toEndOf="@id/img_colombia"
         app:layout_constraintTop_toTopOf="@id/img_colombia" />
 
+    <!--    second column   -->
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="345dp" />
+
     <ImageView
         android:id="@+id/img_madagascar"
         style="@style/flag_img_style"
         android:src="@drawable/ic_madagascar"
         app:layout_constraintBottom_toTopOf="@+id/img_thailand"
-        app:layout_constraintStart_toStartOf="@id/guideline_left"
-        app:layout_constraintTop_toBottomOf="@+id/img_colombia" />
+        app:layout_constraintStart_toStartOf="@id/guideline_right"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
 
     <androidx.appcompat.widget.AppCompatTextView
         style="@style/text_country_name"
@@ -103,7 +111,7 @@
         style="@style/flag_img_style"
         android:src="@drawable/ic_thailand"
         app:layout_constraintBottom_toTopOf="@+id/img_denmark"
-        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintStart_toStartOf="@id/guideline_right"
         app:layout_constraintTop_toBottomOf="@+id/img_madagascar" />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -118,7 +126,7 @@
         style="@style/flag_img_style"
         android:src="@drawable/ic_denmark"
         app:layout_constraintBottom_toTopOf="@+id/img_switzerland"
-        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintStart_toStartOf="@id/guideline_right"
         app:layout_constraintTop_toBottomOf="@+id/img_thailand" />
 
     <androidx.appcompat.widget.AppCompatTextView
@@ -132,8 +140,8 @@
         android:id="@+id/img_switzerland"
         style="@style/flag_img_style"
         android:src="@drawable/ic_switzerland"
-        app:layout_constraintBottom_toTopOf="@id/imageview_arrow_front"
-        app:layout_constraintStart_toStartOf="@id/guideline_left"
+        app:layout_constraintBottom_toTopOf="@+id/imageview_arrow_front"
+        app:layout_constraintStart_toStartOf="@id/guideline_right"
         app:layout_constraintTop_toBottomOf="@+id/img_denmark" />
 
     <androidx.appcompat.widget.AppCompatTextView

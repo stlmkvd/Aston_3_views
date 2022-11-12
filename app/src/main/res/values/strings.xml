@@ -1,7 +1,7 @@
 <resources>
 
     <!--    countries-->
-    <string name="app_name">My Application</string>
+    <string name="app_name">Aston Views Homework</string>
     <string name="austria">austria</string>
     <string name="poland">poland</string>
     <string name="italy">italy</string>
@@ -17,6 +17,12 @@
 
     <!--    other-->
     <string name="swipe">swipe</string>
-    <string name="edittext_hint">Enter url here...</string>
+    <string name="edittext_hint">Enter url here…</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aston">aston</string>
+    <string name="title">views</string>
+    <string name="done_by">done by\ndanil stalmakov\nfor aston</string>
+    <string name="download_via">download via</string>
+    <string name="glide">glide</string>
+    <string name="inputstream">input\nStream</string>
 </resources>

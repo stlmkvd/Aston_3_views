@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <style name="flag_img_style">
         <item name="android:layout_width">50dp</item>
@@ -7,31 +7,50 @@
         <item name="android:adjustViewBounds">true</item>
         <item name="android:padding">1px</item>
         <item name="android:background">@color/black</item>
+        <item name="android:layout_marginEnd">16dp</item>
     </style>
 
-    <style name="text_country_name">
+    <style name="text_normal">
+        <item name="android:fontFamily">@font/ostrich_regular</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">32sp</item>
+    </style>
+
+    <style name="text_big" parent="@style/text_normal">
+        <item name="android:textSize">45sp</item>
+    </style>
+
+    <style name="text_header" parent="text_big">
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:paddingTop">5dp</item>
+    </style>
+
+    <style name="text_country_name" parent="@style/text_big">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">0dp</item>
         <item name="android:layout_marginStart">16dp</item>
-        <item name="android:fontFamily">@font/ostrich_regular</item>
-        <item name="android:gravity">center</item>
-        <item name="android:textColor">@color/black</item>
-        <item name="android:textSize">45sp</item>
-    </style>
-
-    <style name="text_header">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
-        <item name="android:fontFamily">@font/ostrich_regular</item>
-        <item name="android:gravity">center</item>
-        <item name="android:textColor">@color/black</item>
-        <item name="android:textSize">45sp</item>
-        <item name="android:textStyle">bold</item>
     </style>
 
     <style name="arrow">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:src">@drawable/ic_baseline_arrow_right_alt_24</item>
+    </style>
+
+    <style name="download_buttons">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="edittext_url">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+        <item name="android:inputType">textMultiLine</item>
+        <item name="android:hint">@string/edittext_hint</item>
     </style>
 </resources>
