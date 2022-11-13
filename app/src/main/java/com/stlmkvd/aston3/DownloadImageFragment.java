@@ -26,7 +26,7 @@ public class DownloadImageFragment extends Fragment {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         viewModel = new ViewModelProvider(this).get(DownloadImageFragmentViewModel.class);
-        viewModel.getDownloadResult().postValue(true);
+        viewModel.getDownloadResult().setValue(true);
     }
 
     @Nullable
@@ -65,8 +65,10 @@ public class DownloadImageFragment extends Fragment {
         };
         viewModel.getDownloadResult().observe(this, isDownloaded -> {
             if (isDownloaded) updateUI();
-            else Toast.makeText(requireContext(),
-                    "Download failed :(", Toast.LENGTH_SHORT).show();
+            else {
+                Toast.makeText(requireContext(),
+                        "Download failed :(", Toast.LENGTH_SHORT).show();
+            }
         });
         binding.buttonGlide.setOnClickListener(buttonsListener);
         binding.buttonInputStream.setOnClickListener(buttonsListener);
